@@ -1,9 +1,91 @@
-body {
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #333;
-    color: whitesmoke;
-    text-align: center;
-    height: 100%;
 }
+
+:root {
+    --main-background-color: #fff;
+    --font-color: #333;
+    --transparent-color: rgba(0, 0, 0, 0.3);
+    --hover-font-color: #fff;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    box-sizing: border-box;
+    background-color: var(--main-background-color);
+    color: var(--font-color);
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+.logo {
+    text-align: center;
+    width: 100vw;
+}
+
+.logo h1 {
+    margin-top: 25px;
+    letter-spacing: 0.15em;
+    font-size: 1.2em;
+}
+
+.logo p {
+    margin-bottom: 25px;
+    font-size: 1em;
+}
+
+hr {
+    background: #333;
+    width: 60%;
+}
+
+.menu {
+    /* background-color: yellow; */
+    width: 100vw;
+    text-align: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    font-weight: 700;
+}
+
+#menu {
+    margin: 25px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.menu ul ul {
+    display: none;
+}
+
+.menu ul li:hover > ul {
+    display: block;
+    z-index: 1;
+    background-color: var(--transparent-color);    
+}
+
+.menu ul ul li:hover > a{
+    color: var(--hover-font-color);
+}
+
+/* To dać w media na desktop */
+
+/* .menu ul li > a{
+    display: none;
+}
+
+.menu ul ul li a {
+    display: inline-block;
+} */
