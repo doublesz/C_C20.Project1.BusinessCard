@@ -1,18 +1,20 @@
 * {
     margin: 0;
     padding: 0;
+    /* border: solid red 1px; */
+    box-sizing: border-box;
 }
 
 :root {
     --main-background-color: #fff;
     --font-color: #333;
-    --transparent-color: rgba(0, 0, 0, 0.5);
+    --hover-bg-color: #333;
     --hover-font-color: #fff;
 }
 
 body {
     font-family: 'PT Sans', sans-serif;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     background-color: var(--main-background-color);
     color: var(--font-color);
     text-align: center;
@@ -41,13 +43,12 @@ body {
     font-size: 1em;
 }
 
-hr {
+#underline-logo {
     background: #333;
     width: 60%;
 }
 
 .menu {
-    /* background-color: yellow; */
     width: 100vw;
     text-align: center;
 }
@@ -59,7 +60,6 @@ hr {
 
 #menu {
     margin: 25px;
-    position: relative;
 }
 
 .menu ul li a {
@@ -71,22 +71,28 @@ hr {
     display: none;
 }
 
+.sub-menu-item {
+    margin: 2%;
+}
+
 .menu ul li:hover > ul {
     display: block;
-    position: absolute;
-    margin: 0% 15%;
-    width: 70%;
-    z-index: 1;
-    background-color: var(--transparent-color);    
+    margin: 0% 18%;
+    padding-top: 0.5em;
+    width: 64%;
+    background-color: var(--main-background-color);    
 }
 
 .menu ul ul li > a{
-    color: var(--hover-font-color);
+    color: var(--font-color);
+    margin: 0;
 }
 
 #me {
     width: 100vw;
+    margin-bottom: 15px;
 }
+
 /* To dać w media na desktop */
 
 /* .menu ul li > a{
