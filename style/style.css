@@ -9,7 +9,7 @@
     --main-background-color: #fff;
     --font-color: #333;
     --hover-bg-color: #333;
-    --hover-font-color: #fff;
+    --hover-font-color: #666;
 }
 
 body {
@@ -44,7 +44,11 @@ body {
 }
 
 #underline-logo {
-    background: #333;
+    height: 0;
+    border: 0;
+    border-top: 1px solid #333;
+    margin: 0;
+    padding: 0;
     width: 60%;
 }
 
@@ -91,6 +95,35 @@ body {
 #me {
     width: 100vw;
     margin-bottom: 15px;
+}
+
+.text-content {
+    padding: 10px 5px;
+}
+
+#underline-socials {
+    height: 0;
+    border: 0;
+    border-top: 1px solid #333;
+    margin: 0 auto;
+    padding: 0;
+    width: 50%;
+}
+
+.social-item {
+    font-size: 2.5em;
+    padding: 5% 8%;
+    margin: 2% 0;
+}
+
+.social-item a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.social-item a:hover {
+    text-decoration: none;
+    color: var(--hover-font-color);
 }
 
 /* To dać w media na desktop */
