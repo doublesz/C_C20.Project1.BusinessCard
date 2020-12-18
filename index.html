@@ -25,10 +25,10 @@
                 <ul id="menu">
                     <li><a href="#">Menu</a>
                     <ul>
-                        <li class="sub-menu-item"><a href="#">Strona główna</a></li>
-                        <li class="sub-menu-item"><a href="#">O mnie</a></li>
-                        <li class="sub-menu-item"><a href="#">Kontakt</a></li>
-                        <li class="sub-menu-item"><a href="#">Umiejętności</a></li>
+                        <li class="sub-menu-item"><a href="#">Main</a></li>
+                        <li class="sub-menu-item"><a href="#">About me</a></li>
+                        <li class="sub-menu-item"><a href="#">Contact</a></li>
+                        <li class="sub-menu-item"><a href="#">Skills</a></li>
                     </ul> 
                     </li>                   
                 </ul>
@@ -41,7 +41,7 @@
         </section>
         <main>
             <h2 class="text-h">About me</h2>
-            <p class="text-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, fuga delectus. Vero recusandae amet iste inventore debitis tenetur architecto dolorum, sapiente praesentium id accusantium odio doloribus reiciendis, assumenda eos neque.</p>
+            <p class="abt-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, fuga delectus. Vero recusandae amet iste inventore debitis tenetur architecto dolorum, sapiente praesentium id accusantium odio doloribus reiciendis, assumenda eos neque.</p>
         </main>
         <section class="socials">
             <div class="container">
@@ -58,17 +58,12 @@
             <hr id="underline-socials">
         </section>
         <div class="contact-form">
+            <p>Contact me!</p>
             <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Your name">
-                
-                <label for="email">e-mail</label>
-                <input type="email" id="email" placeholder="Your e-mail">
-                
-                <label for="write-text">e-mail</label>
-                <textarea id="write-text" placeholder="Content..."></textarea>
-                
-                <input type="submit" value="submit">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="e-mail" required>
+                <textarea id="write-text" placeholder="Message..." required></textarea>
+                <input type="submit" value="Submit">
             </form>
         </div>
     </body>

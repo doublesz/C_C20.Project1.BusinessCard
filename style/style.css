@@ -6,7 +6,8 @@
 }
 
 :root {
-    --main-background-color: #fff;
+    --main-bg-color: #fff;
+    --sec-bg-color: #ddd;
     --font-color: #333;
     --hover-bg-color: #333;
     --hover-font-color: #666;
@@ -15,7 +16,7 @@
 body {
     font-family: 'PT Sans', sans-serif;
     /* box-sizing: border-box; */
-    background-color: var(--main-background-color);
+    background-color: var(--main-bg-color);
     color: var(--font-color);
     text-align: center;
 }
@@ -46,7 +47,7 @@ body {
 #underline-logo {
     height: 0;
     border: 0;
-    border-top: 2px solid #333;
+    border-top: 2px solid var(--font-color);
     margin: 0;
     padding: 0;
     width: 60%;
@@ -84,7 +85,7 @@ body {
     margin: 0% 18%;
     padding-top: 0.5em;
     width: 64%;
-    background-color: var(--main-background-color);    
+    background-color: var(--main-bg-color);    
 }
 
 .menu ul ul li > a{
@@ -97,16 +98,19 @@ body {
     margin-bottom: 15px;
 }
 
-.text-content {
+.abt-me {
+    margin: 0 .5em;
     padding: 10px 5px;
+    text-align: justify;
 }
 
 #underline-socials {
     height: 0;
     border: 0;
-    border-top: 2px solid #333;
+    border-top: 2px solid var(--font-color);
     margin: 0 auto;
     padding: 0;
+    padding-bottom: 7%;
     width: 50%;
 }
 
@@ -124,6 +128,44 @@ body {
 .social-item a:hover {
     text-decoration: none;
     color: var(--hover-font-color);
+}
+
+.contact-form {
+    display: block;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0.5em;
+    background-color: var(--sec-bg-color);    
+}
+
+.contact-form p {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0.5em;
+}
+
+.contact-form input, textarea {
+    width: 80%;
+    margin: 5px;
+    padding: .3em;
+    border: 1px solid;
+    border-color: var(--font-color);
+    border-radius: 3px;
+    resize: vertical;
+}
+
+#write-text {
+    height: 10em;
+}
+
+input[type=submit] {
+    width: 50%;
+    max-width: 250px;
+    height: 2.5em;
+    background-color: var(--font-color);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--main-bg-color);
 }
 
 /* To dać w media na desktop */
