@@ -135,6 +135,40 @@ body {
     color: var(--hover-font-color);
 }
 
+.gallery {
+    background-color: var(--sec-bg-color); 
+}
+
+.gallery p {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0.5rem 0.5rem 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.gal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2.5rem;
+    font-size: 0;
+}
+
+.image {
+    margin: 0;
+    padding: 0;
+    width: 80vw;
+}
+
+.image img {
+    width: 100%;
+}
+
+.mobile-disp-none {
+    display: none;
+}
+
+
 .contact-form {
     display: block;
     width: 100vw;
@@ -183,43 +217,6 @@ input[type=submit]:hover {
     letter-spacing: 0.05em;
 }
 
-.gallery {
-    background-color: var(--sec-bg-color); 
-}
-
-.gallery p {
-    font-size: 20px;
-    font-weight: 400;
-    margin: 0 0.5em 0.5em 0.5em;
-    padding-top: 0.5em;
-}
-
-.gal-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 2.5em;
-}
-
-.image {
-    margin: 0;
-    padding: 0;
-    width: 80vw;
-    max-height: 220px;
-    overflow: hidden;
-}
-
-.image img {
-    width: 100%;
-}
-
-.mobile-disp-none {
-    display: none;
-}
-
-
-
-
 footer {
     height: 80px;
     background-color:  var(--hover-bg-color);
@@ -229,7 +226,7 @@ footer {
 footer p {
     margin: 0 auto;
     font-size: 20px;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 
