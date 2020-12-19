@@ -102,6 +102,7 @@ body {
     margin: 0 .5em;
     padding: 10px 5px;
     text-align: justify;
+    text-align-last: center;
 }
 
 #underline-socials {
@@ -146,12 +147,17 @@ body {
 
 .contact-form input, textarea {
     width: 80%;
+    height: 2.5em;
     margin: 5px;
     padding: .3em;
     border: 1px solid;
     border-color: var(--font-color);
     border-radius: 3px;
     resize: vertical;
+}
+
+.contact-form input:focus, textarea:focus {
+    outline-color:  var(--font-color);
 }
 
 #write-text {
@@ -167,6 +173,14 @@ input[type=submit] {
     font-size: 16px;
     color: var(--main-bg-color);
 }
+
+.image img {
+    width: 80vw;
+}
+
+/* input[type=submit]:hover {
+    letter-spacing: 0.1em;
+} */
 
 /* To dać w media na desktop */
 
