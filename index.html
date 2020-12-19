@@ -26,9 +26,8 @@
                     <li><a href="#">Menu</a>
                     <ul>
                         <li class="sub-menu-item"><a href="#">Main</a></li>
-                        <li class="sub-menu-item"><a href="#">About me</a></li>
-                        <li class="sub-menu-item"><a href="#">Contact</a></li>
-                        <li class="sub-menu-item"><a href="#">Skills</a></li>
+                        <li class="sub-menu-item"><a href="#about-me">About me</a></li>
+                        <li class="sub-menu-item"><a href="#contact">Contact</a></li>
                     </ul> 
                     </li>                   
                 </ul>
@@ -40,25 +39,27 @@
                     <img id="me" src="img/me.jpg" alt="Ja">
                 </figure>
             </section>
-            <h2 class="text-h">About me</h2>
-            <p class="abt-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, fuga delectus. Vero recusandae amet iste inventore debitis tenetur architecto dolorum, sapiente praesentium id accusantium odio doloribus reiciendis, assumenda eos neque.</p>
-            <section class="socials">
-            <div class="container">
-                <div class="social-item">
-                    <a href="https://www.linkedin.com/in/szymon-suchodolski/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </div>
-                <div class="social-item">
-                    <a href="https://github.com/doublesz" target="_blank"><i class="fab fa-github-square"></i></a>
-                </div>
-                <div class="social-item">
-                    <a href="https://www.facebook.com/szymon.suchodolski.75" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                </div>
-            </div>
-            <hr id="underline-socials">
-        </section>
+            <section id="about-me">
+                <h2 class="text-h">About me</h2>
+                <p class="abt-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, fuga delectus. Vero recusandae amet iste inventore debitis tenetur architecto dolorum, sapiente praesentium id accusantium odio doloribus reiciendis, assumenda eos neque.</p>
+                <section class="socials">
+                    <div class="container">
+                        <div class="social-item">
+                            <a href="https://www.linkedin.com/in/szymon-suchodolski/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <div class="social-item">
+                            <a href="https://github.com/doublesz" target="_blank"><i class="fab fa-github-square"></i></a>
+                        </div>
+                        <div class="social-item">
+                            <a href="https://www.facebook.com/szymon.suchodolski.75" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                        </div>
+                    </div>
+                    <hr id="underline-socials">
+                </section>
+            </section>
         </main>
         <section class="gallery">
-            <p>Hobbies</p>
+            <p>Free time gallery</p>
             <div class="gal-container">
                 <figure class="image">
                     <img src="img/diver-sm.jpg" alt="Diving man">
@@ -69,34 +70,37 @@
                 <figure class="image">
                     <img src="img/run-sm.jpg" alt="Running">
                 </figure>
-                <figure class="image">
+                <figure class="image  mobile-disp-none">
                     <img src="img/camp-sm.jpg" alt="Camping">
                 </figure>
-                <figure class="image">
+                <figure class="image mobile-disp-none">
                     <img src="img/family-sm.jpg" alt="Family">
                 </figure>
-                <figure class="image">
+                <figure class="image mobile-disp-none">
                     <img src="img/hiking-sm.jpg" alt="Hiking">
                 </figure>
-                <figure class="image">
+                <figure class="image mobile-disp-none">
                     <img src="img/guitar-sm.jpg" alt="Playing guitar">
                 </figure>
-                <figure class="image">
+                <figure class="image mobile-disp-none">
                     <img src="img/books-sm.jpg" alt="Reading">
                 </figure>
-                <figure class="image">
+                <figure class="image mobile-disp-none">
                     <img src="img/harley-sm.jpg" alt="Harley Davidson">
                 </figure>
             </div>
         </section>
-        <div class="contact-form">
+        <div class="contact-form" id="contact">
             <p>Contact me!</p>
             <form>
                 <input type="text" id="name" placeholder="Name" required>
                 <input type="email" id="email" placeholder="e-mail" required>
-                <textarea id="write-text" placeholder="Message..." required></textarea>
+                <textarea id="message-area" placeholder="Message..." required></textarea>
                 <input type="submit" value="Submit">
             </form>
         </div>
+        <footer>
+            <p>Szymon Suchodolski</p>
+        </footer>
     </body>
 </html>

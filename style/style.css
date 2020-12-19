@@ -13,6 +13,10 @@
     --hover-font-color: #666;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'PT Sans', sans-serif;
     /* box-sizing: border-box; */
@@ -135,8 +139,7 @@ body {
     display: block;
     width: 100vw;
     margin: 0 auto;
-    padding: 0.5em;
-    background-color: var(--sec-bg-color);    
+    padding: 0.5em;   
 }
 
 .contact-form p {
@@ -160,7 +163,7 @@ body {
     outline-color:  var(--font-color);
 }
 
-#write-text {
+#message-area {
     height: 10em;
 }
 
@@ -168,19 +171,68 @@ input[type=submit] {
     width: 50%;
     max-width: 250px;
     height: 2.5em;
-    background-color: var(--font-color);
+    background-color: var(--hover-font-color);
     font-weight: 700;
     font-size: 16px;
     color: var(--main-bg-color);
 }
 
-.image img {
-    width: 80vw;
+input[type=submit]:hover {
+    border: 3px solid var(--hover-bg-color);
+    border-radius: 3px;
+    letter-spacing: 0.05em;
 }
 
-/* input[type=submit]:hover {
-    letter-spacing: 0.1em;
-} */
+.gallery {
+    background-color: var(--sec-bg-color); 
+}
+
+.gallery p {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0.5em 0.5em 0.5em;
+    padding-top: 0.5em;
+}
+
+.gal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2.5em;
+}
+
+.image {
+    margin: 0;
+    padding: 0;
+    width: 80vw;
+    max-height: 220px;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+}
+
+.mobile-disp-none {
+    display: none;
+}
+
+
+
+
+footer {
+    height: 80px;
+    background-color:  var(--hover-bg-color);
+    color: var(--main-bg-color);
+}
+
+footer p {
+    margin: 0 auto;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+
 
 /* To dać w media na desktop */
 
