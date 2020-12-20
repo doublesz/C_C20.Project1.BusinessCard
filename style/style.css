@@ -144,18 +144,53 @@ body {
     align-items: center;
     padding-bottom: 2.5rem;
     font-size: 0;
-    width: 100vw;
-    margin: 0 auto;
+    width: 80vw;
+    margin: auto;
 }
 
 .image {
+    background-size: cover;
+    background-position: center;
     margin: 0;
     padding: 0;
-    width: 80%;
+    width: 100%;
+    min-height: 200px;
 }
 
-.image img {
-    width: 100%;
+.photo1 {
+    background-image: url(../img/diver-lg.jpg);
+}
+
+.photo2 {
+    background-image: url(../img/skateboarding-lg.jpg);
+}
+
+.photo3 {
+    background-image: url(../img/run-lg.jpg);
+}
+
+.photo4 {
+    background-image: url(../img/camp-lg.jpg);
+}
+
+.photo5 {
+    background-image: url(../img/family-lg.jpg);
+}
+
+.photo6 {
+    background-image: url(../img/hiking-lg.jpg);
+}
+
+.photo7 {
+    background-image: url(../img/guitar-lg.jpg);
+}
+
+.photo8 {
+    background-image: url(../img/books-lg.jpg);
+}
+
+.photo9 {
+    background-image: url(../img/harley-lg.jpg);
 }
 
 .mobile-disp-none {
@@ -237,10 +272,7 @@ footer p {
     .menu ul ul {
         display: none;
     }
-    }
 
-
-@media screen and (max-width: 540px) {
     .menu ul li:hover > ul {
         display: block;
         margin: 0% 18%;
@@ -258,14 +290,12 @@ footer p {
 
     .gal-container {
         flex-direction: row;
-        width: 80vw;
+        width: 85vw;
+        min-height: 150px;
     }
 
     .image {
-        min-height: 100%;
-        width: 33%;
-        object-fit: cover;
-        flex: 1;
+        height: 100%;
     }
 
 
