@@ -23,8 +23,8 @@
             <hr id="underline-logo">
             <nav class="menu">
                 <ul id="menu">
-                    <li><a href="#">Menu</a>
-                    <ul>
+                    <li class="sub-menu-parent"><a href="#">Menu</a>
+                    <ul class="sub-menu">
                         <li class="sub-menu-item"><a href="#">Main</a></li>
                         <li class="sub-menu-item"><a href="#about-me">About me</a></li>
                         <li class="sub-menu-item"><a href="#contact">Contact</a></li>
@@ -35,7 +35,7 @@
         </header>
         <main>
             <section>
-                <figure>
+                <figure class="main-photo">
                     <img id="me" src="img/me.jpg" alt="Ja">
                 </figure>
             </section>
@@ -59,7 +59,7 @@
             </section>
         </main>
         <section class="gallery">
-            <p>Free time gallery</p>
+            <p>Free time</p>
             <div class="gal-container">
                 <figure class="image">
                     <img src="img/diver-lg.jpg" alt="Diving man">
@@ -100,7 +100,8 @@
             </form>
         </div>
         <footer>
-            <p>Szymon Suchodolski</p>
+            <p><a href="#" class="scroll-top"><i class="far fa-caret-square-up"></i></a>
+            &copy; Szymon Suchodolski</p>
         </footer>
     </body>
 </html>
