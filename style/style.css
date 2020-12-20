@@ -76,20 +76,24 @@ body {
     color: var(--font-color);
 }
 
+@media screen and (max-width: 540px) {
 .menu ul ul {
     display: none;
+}
 }
 
 .sub-menu-item {
     margin: 2%;
 }
 
-.menu ul li:hover > ul {
-    display: block;
-    margin: 0% 18%;
-    padding-top: 0.5em;
-    width: 64%;
-    background-color: var(--main-bg-color);    
+@media screen and (max-width: 540px) {
+    .menu ul li:hover > ul {
+        display: block;
+        margin: 0% 18%;
+        padding-top: 0.5em;
+        width: 64%;
+        background-color: var(--main-bg-color);    
+    }
 }
 
 .menu ul ul li > a{
@@ -97,6 +101,9 @@ body {
     margin: 0;
 }
 
+.main-photo {
+    overflow: hidden;
+}
 #me {
     width: 100vw;
     margin-bottom: 15px;
@@ -142,8 +149,8 @@ body {
 .gallery p {
     font-size: 20px;
     font-weight: 400;
-    margin: 0 0.5rem 0.5rem 0.5rem;
-    padding-top: 0.5rem;
+    margin-bottom: 0.5em;
+    padding-top: 0.5em;
 }
 
 .gal-container {
@@ -218,18 +225,44 @@ input[type=submit]:hover {
 }
 
 footer {
+    display: block;
     height: 80px;
+    width: 100vw;
     background-color:  var(--hover-bg-color);
     color: var(--main-bg-color);
 }
 
 footer p {
-    margin: 0 auto;
     font-size: 20px;
-    padding-top: 30px;
+    padding: 25px 1em 25px 0;
 }
 
+.scroll-top {
+    margin-right: 1em;
+    color: var(--main-bg-color);
+    font-size: 0.9em;
+    text-decoration: none;
+}
 
+@media screen and (min-width: 541px) {
+    .container {
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    #underline-logo {
+        display: none;
+    }
+
+    .sub-menu-parent > a{
+    display: none;
+    }
+
+    .menu ul ul li {
+        display: inline-block;
+    }
+
+}
 
 /* To dać w media na desktop */
 
