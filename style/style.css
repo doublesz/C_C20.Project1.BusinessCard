@@ -453,22 +453,42 @@ footer p {
 }
 
 @media screen and (min-width: 992px) {
-    
+
 }
 
 @media screen and (min-width: 1200px) {
+    .container {
+        width: 100vw;
+        height: 30vh;
+    }
     main {
         background-color: var(--main-bg-color);
         width: 100 vw;
+        height: 70vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo h1 {
+        font-size: 3.5em;
+        padding-bottom: 0.8em;
+        letter-spacing: 0.3em;
+    }
+
+    .logo p {
+        font-size: 1.5em;
+        letter-spacing: 0.3em;
+    }
+
+    .main-photo-container {
+        width: 50vw;
+        background-image: url(../img/me.jpg);
+        background-position: center;
+        background-size: cover;
     }
 
     .main-photo {
-        width: 50vw;
-        font-size: 0;
-    }
-     .main-photo img {
-        width: 100%;
-        object-fit: cover;
+        display: none;
     }
 
     #about-me {
@@ -476,13 +496,15 @@ footer p {
     }
 
     .sec-part {
+        width: 100vw;
+        height: 90vh;
         flex-direction: row-reverse;
+        flex-wrap: nowrap;
     }
 
     .gallery {
         margin: -4px 0 0 0;
-        width: 50vw;
-        /* max-height: 500px; */
+        width: 50%;
     }
     
     .gallery p {
@@ -500,12 +522,22 @@ footer p {
 
     .image {
         width: 33.33%;
+        min-height: 30.15vh;
     }
 
     .contact-form {
         background-color: var(--main-bg-color);
         margin: -4px 0 0 0;
-        width: 50vw;
+        width: 50%;
+    }
+
+    footer {
+        width: 100vw;
+        height: 10vh;
+    }
+
+    .scroll-top {
+        display: none;
     }
 
 }
