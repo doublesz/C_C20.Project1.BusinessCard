@@ -88,10 +88,11 @@ body {
 .main-photo {
     overflow: hidden;
     font-size: 0;
-}
-#me {
     width: 100vw;
-    margin-bottom: 15px;
+}
+.main-photo img {
+    width: 100%;
+    margin-bottom: 25px;
 }
 
 .abt-me {
@@ -268,7 +269,7 @@ footer p {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 575px) {
     .menu ul ul {
         display: none;
     }
@@ -282,10 +283,51 @@ footer p {
     }
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 576px) {
     .container {
         flex-wrap: nowrap;
         flex-direction: row;
+    }
+
+    #underline-logo {
+        display: none;
+    }
+
+    .sub-menu-parent > a{
+    display: none;
+    }
+
+    .menu ul ul li {
+        display: inline-flex;
+    }
+
+    .main-photo {
+        background-color: var(--sec-bg-color);
+        margin: 0;
+        padding: 0;
+        /* max-height: 300px; */
+    }
+
+    .main-photo img {
+        width: 50%;
+        padding: 1rem 0;
+        margin: 0
+    }
+
+    #about-me {
+        padding-top: 2rem;
+    }
+
+    .abt-me {
+        width: 70vw;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .social-item {
+        font-size: 3.5em;
+        padding: 0% 9%;
+        margin: 3% 0;
     }
 
     .gal-container {
@@ -297,28 +339,4 @@ footer p {
     .image {
         height: 100%;
     }
-
-
-    #underline-logo {
-        display: none;
-    }
-
-    .sub-menu-parent > a{
-    display: none;
-    }
-
-    .menu ul ul li {
-        display: inline-block;
-    }
-
 }
-
-/* To dać w media na desktop */
-
-/* .menu ul li > a{
-    display: none;
-}
-
-.menu ul ul li a {
-    display: inline-block;
-} */
