@@ -26,6 +26,7 @@ body {
 }
 
 .container {
+    background-color: var(--main-bg-color);
     display: flex;
     flex-wrap: wrap;
     text-transform: uppercase;
@@ -133,8 +134,14 @@ body {
     color: var(--hover-font-color);
 }
 
+.sec-part {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .gallery {
     background-color: var(--sec-bg-color);
+    width: 100vw;
 }
 
 .gallery p {
@@ -435,4 +442,70 @@ footer p {
     .photo4 {
         display: flex;
     }
+
+    .contact-form {
+        background-color: var(--sec-bg-color);
+    }
+
+    .contact-form p {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        background-color: var(--main-bg-color);
+        width: 100 vw;
+    }
+
+    .main-photo {
+        width: 50vw;
+        font-size: 0;
+    }
+     .main-photo img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #about-me {
+        width: 50vw;
+    }
+
+    .sec-part {
+        flex-direction: row-reverse;
+    }
+
+    .gallery {
+        margin: -4px 0 0 0;
+        width: 50vw;
+        /* max-height: 500px; */
+    }
+    
+    .gallery p {
+        display: none;
+    }
+
+    .gal-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .mobile-disp-none {
+        display: flex;
+    }
+
+    .image {
+        width: 33.33%;
+    }
+
+    .contact-form {
+        background-color: var(--main-bg-color);
+        margin: -4px 0 0 0;
+        width: 50vw;
+    }
+
 }
