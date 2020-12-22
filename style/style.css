@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* border: solid red 1px; */
     box-sizing: border-box;
 }
 
@@ -509,6 +508,11 @@ footer p {
         font-size: 1.3em;
         letter-spacing: 0.15em;
         margin: 4%;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .sub-menu-item:hover {
+        transform: scale(1.1);
     }
 
     main {
@@ -520,9 +524,9 @@ footer p {
     }
 
     .logo h1 {
-        font-size: 3.5em;
+        font-size: 2.5em;
         padding-bottom: 0.8em;
-        letter-spacing: 0.3em;
+        letter-spacing: 0.2em;
     }
 
     .logo p {
@@ -559,7 +563,42 @@ footer p {
         font-size: 2.8em;
     }
 
+    .fa-linkedin{
+        animation-name: turnSocials;
+        animation-duration: 4s;
+        animation-iteration-count: 3;
+        animation-timing-function: linear;
+
+    }
+
+    .fa-github-square{
+        animation-name: turnSocials;
+        animation-delay: 4s;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+    }
+
+    .fa-facebook-square{
+        animation-name: turnSocials;
+        animation-delay: 8s;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+
+    }    
+
+    @keyframes turnSocials {
+        0% {transform:rotate(0deg);}
+        25% {transform:rotate(90deg);}
+        50% {transform:rotate(180deg);}
+        75% {transform:rotate(270deg);}
+        100% {transform:rotate(360deg);}
+    }
+
     #underline-socials {
+        margin-top: 3em;
         width: 38%;
     }
 
@@ -592,6 +631,11 @@ footer p {
     .image {
         width: 33.33%;
         min-height: 30.15vh;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .image:hover {
+        transform: scale(1.05);
     }
 
     .contact-form {
@@ -615,14 +659,11 @@ footer p {
         margin: 7px;
     }
     
-    #message-area {
-        height: 20em;
-    }
-    
     input[type=submit] {
         max-width: 300px;
         height: 2.4em;
         font-size: 1.4em;
+        transition: letter-spacing 0.1s ease-in-out;
     }
 
     input[type=submit]:hover {
@@ -637,5 +678,40 @@ footer p {
     .scroll-top {
         display: none;
     }
+}
 
+@media screen and (min-height: 900px) {
+    #message-area {
+        height: 20em;
+    }
+}
+
+@media screen and (min-width: 1440px) and (min-height: 900px) {
+    .container {
+        height: 30vh;
+        margin: 0;
+    }
+    
+    .logo h1 {
+        font-size: 3.5em;
+        padding-bottom: 0.8em;
+        letter-spacing: 0.3em;
+    }
+
+    main {
+        width: 100vw;
+    }
+
+    .social-item {
+        font-size: 3em;
+    }
+
+    #underline-socials {
+        margin-top: 3em;
+        width: 33%;
+    }
+
+    .sec-part {
+        width: 100vw;
+    }
 }
