@@ -350,6 +350,11 @@ footer p {
     .image {
         height: 100%;
     }
+
+    #contact {
+        width: 70vw;
+        margin: auto;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -453,10 +458,32 @@ footer p {
 }
 
 @media screen and (min-width: 992px) {
+    .sub-menu-item {
+        font-size: 1.2em;
+        margin: 4%;
+    }
 
+    #about-me h2 {
+        font-size: 2em;
+    }
+
+    .abt-me {
+        width: 70%;
+        font-size: 1.1em;
+        margin-bottom: 0.5em;
+    }
+
+    .mobile-disp-none {
+        display: flex;
+    }
+
+    .image {
+        width: 33.33%;
+        /* min-height: 30.15vh; */
+    }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
     .container {
         width: 100vw;
         height: 30vh;
@@ -531,9 +558,13 @@ footer p {
         width: 50%;
     }
 
+    #contact {
+        width: 80%;
+    }
+
     footer {
         width: 100vw;
-        height: 10vh;
+        height: 9.55vh;
     }
 
     .scroll-top {
