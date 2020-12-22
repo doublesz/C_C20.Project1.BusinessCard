@@ -31,11 +31,13 @@ body {
     flex-wrap: wrap;
     text-transform: uppercase;
     justify-content: center;
+    width: 100vw;
 }
 
 .logo {
+    width: 50%;
     text-align: center;
-    width: 100vw;
+    margin: auto;
 }
 
 .logo h1 {
@@ -59,7 +61,7 @@ body {
 }
 
 .menu {
-    width: 100vw;
+    width: 50%;
     text-align: center;
 }
 
@@ -293,12 +295,17 @@ footer p {
         width: 64%;
         background-color: var(--main-bg-color);    
     }
+
+    .sec-part {
+        width: 100vw;
+    }
 }
 
 @media screen and (min-width: 576px) {
     .container {
         flex-wrap: nowrap;
         flex-direction: row;
+        width: 100vw;
     }
 
     #underline-logo {
@@ -341,9 +348,17 @@ footer p {
         margin: 3% 0;
     }
 
+    .sec-part {
+        width: 100vw;
+    }
+
+    .gallery {
+        width: 100vw;
+    }
+
     .gal-container {
         flex-direction: row;
-        width: 85vw;
+        width: 85%;
         min-height: 150px;
     }
 
@@ -382,6 +397,7 @@ footer p {
         padding-bottom: 0;
         background-color: var(--sec-bg-color);
         margin-top: 0.5rem;
+        width: 100vw;
     }
 
     .main-photo {
@@ -483,11 +499,18 @@ footer p {
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1280px) {
     .container {
         width: 100vw;
         height: 30vh;
     }
+
+    .sub-menu-item {
+        font-size: 1.3em;
+        letter-spacing: 0.15em;
+        margin: 4%;
+    }
+
     main {
         background-color: var(--main-bg-color);
         width: 100 vw;
@@ -522,11 +545,30 @@ footer p {
         width: 50vw;
     }
 
+    #about-me h2 {
+        font-size: 2.3em;
+        margin-bottom: 2rem;
+    }
+
+    .abt-me {
+        font-size: 1.3em;
+        margin: 2em auto;
+    }
+
+    .social-item {
+        font-size: 2.8em;
+    }
+
+    #underline-socials {
+        width: 38%;
+    }
+
     .sec-part {
         width: 100vw;
         height: 90vh;
         flex-direction: row-reverse;
         flex-wrap: nowrap;
+        margin: 0;
     }
 
     .gallery {
@@ -554,12 +596,37 @@ footer p {
 
     .contact-form {
         background-color: var(--main-bg-color);
-        margin: -4px 0 0 0;
+        margin: auto;
+        padding: 0;
         width: 50%;
+    }
+
+    .contact-form p {
+        font-size: 2em;
     }
 
     #contact {
         width: 80%;
+    }
+
+    .contact-form input, textarea {
+        font-size: 1.3em;
+        height: 2em;
+        margin: 7px;
+    }
+    
+    #message-area {
+        height: 20em;
+    }
+    
+    input[type=submit] {
+        max-width: 300px;
+        height: 2.4em;
+        font-size: 1.4em;
+    }
+
+    input[type=submit]:hover {
+        letter-spacing: 0.1em;
     }
 
     footer {
