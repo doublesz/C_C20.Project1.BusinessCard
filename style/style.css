@@ -688,6 +688,7 @@ footer p {
 
 @media screen and (min-width: 1440px) and (min-height: 900px) {
     .container {
+        width: 100vw;
         height: 30vh;
         margin: 0;
     }
@@ -702,6 +703,14 @@ footer p {
         width: 100vw;
     }
 
+    .main-photo-container {
+        width: 50%;
+    }
+
+    #about-me {
+        width: 50%;
+    }
+
     .social-item {
         font-size: 3em;
     }
@@ -712,6 +721,10 @@ footer p {
     }
 
     .sec-part {
+        width: 100vw;
+    }
+
+    footer {
         width: 100vw;
     }
 }
