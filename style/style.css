@@ -17,6 +17,7 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     font-family: 'PT Sans', sans-serif;
     box-sizing: border-box;
     background-color: var(--main-bg-color);
